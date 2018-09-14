@@ -15,7 +15,8 @@ script:
  - make ARCH=arm64 nanopi4_linux_defconfig
  - make ARCH=arm64 nanopi4-images -j8
 notifications:
- - email: wwin3286tw@yahoo.com.tw
- - recipients:
-   - on_success: always
-   - on_failure: always
+  email:
+    recipients:
+      - wwin3286tw@yahoo.com.tw
+    on_success: always
+    on_failure: always
