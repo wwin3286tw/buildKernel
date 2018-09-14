@@ -13,4 +13,4 @@ script:
  - cd kernel-rockchip
  - make defconfig
  - make ARCH=arm64 nanopi4_linux_defconfig
- - make ARCH=arm64 nanopi4-images
+ - make ARCH=arm64 nanopi4-images -j8
